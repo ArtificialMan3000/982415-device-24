@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Босиков](https://up.htmlacademy.ru/htmlcss/24/user/982415).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
