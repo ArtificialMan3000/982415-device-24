@@ -3,97 +3,214 @@
 <head>
   <meta charset="utf-8">
   <title>Device - магазин хитрых штук</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="main-nav">
-      <a class="main-nav-logo">
-        <img src="logo.jpg" alt="Device - магазин хитрых штук" width="163" height="35">
-      </a>
-      <div class="main-nav-search">
-        <input type="search" name="site-search" placeholder="Поиск по сайту">
-      </div>
-      <ul class="main-nav-add list-reset">
-        <li>
-          <a class="main-nav-add-login" href="login.html">Войти</a>
-        </li>
-        <li><a class="main-nav-add-compare" href="compare.html">Сравнить</a></li>
-        <li><a class="main-nav-add-cart" href="cart.html">Корзина</a></li>
-      </ul>
-      <ul class="main-nav-menu list-reset">
-        <li class="main-nav-menu-catalog">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav-menu-deliver">
-          <a href="delivery.html">Доставка</a>
-        </li>
-        <li class="main-nav-menu-warranty">
-          <a href="warancy.html">Гарантия</a>
-        </li>
-        <li class="main-nav-menu-contacts">
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="site-header">
+      <nav class="main-nav">
+        <a class="main-nav-logo">
+          <img src="img/logo.svg" alt="Device - магазин хитрых штук" width="163" height="35">
+        </a>
+        <div class="main-nav-row main-nav-row-top">
+          <div class="main-nav-search">
+            <form method="get" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
+              <input type="search" name="site-search" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="main-nav-add">
+            <ul class="main-nav-user list-reset">
+              <li class="main-nav-add-item main-nav-user-item main-nav-user-login">
+                <a href="login.html">Войти</a>
+              </li>
+            </ul>
+            <ul class="main-nav-shopping list-reset">
+              <li class="main-nav-add-item main-nav-shopping-item main-nav-shopping-compare"><a href="compare.html">Сравнить</a></li>
+              <li class="main-nav-add-item main-nav-shopping-item main-nav-shopping-cart"><a href="cart.html">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-nav-row main-nav-row-bottom gilroy">
+          <ul class="main-nav-menu list-reset">
+            <li class="main-nav-menu-item main-nav-catalog">
+              <a href="catalog.html">Каталог товаров</a>
+              <div class="cat-menu-dropdown">
+                <ul class="cat-menu-dropdown-list list-reset">
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Виртуальная реальность</a>
+                  </li>
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="cat-menu-dropdown-list list-reset">
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Фитнес-браслеты</a>
+                  </li>
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="cat-menu-dropdown-list list-reset">
+                  <li class="cat-menu-dropdown-item">
+                    <a href="catalog.html">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav-menu-item main-nav-delivery">
+              <a href="delivery.html">Доставка</a>
+            </li>
+            <li class="main-nav-menu-item main-nav-warranty">
+              <a href="warancy.html">Гарантия</a>
+            </li>
+            <li class="main-nav-menu-item main-nav-contacts">
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
   <main>
     <h1 class="visually-hidden">Device - магазин хитрых штук</h1>
-    <section class="slider">
-      <h2 class="visually-hidden">Наши лучшие хитрые штуки</h2>
-      <div class="slide-1">
-        <img src="img/selfy.jpg" alt="Самая длинная селфи-палка" width="384" height="486">
-        <h3>Делай селфи, как Бен Стиллер!</h3>
-        <p class="slide-desc">
-          Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a class="btn slide-btn" href="product.html">Подробнее</a>
-        <dl class="slide-properties">
-          <dt>Длина палки</dt>
-          <dd>8.5 м</dd>
-          <dt>Вес палки</dt>
-          <dd>5 кг</dd>
-          <dt>Материал</dt>
-          <dd>Карбон</dd>
-        </dl>
-      </div>
-      <nav class="slider-nav">
+    <div class="container">
+      <section class="slider">
+        <input id="slider-nav-1" class="visually-hidden" type="radio" name="slide" checked>
+        <input id="slider-nav-2" class="visually-hidden" type="radio" name="slide">
+        <input id="slider-nav-3" class="visually-hidden" type="radio" name="slide">
+        <h2 class="visually-hidden">Наши лучшие хитрые штуки</h2>
+        <div class="slide slide-1">
+          <div class="slide-col slide-col-left">
+            <img class="slide-img slide-img-selfy" src="img/slider-1.png" alt="Самая длинная селфи-палка" width="384" height="486">
+          </div>
+          <div class="slide-col slide-col-right">
+            <div class="slide-num gilroy">01</div>
+            <h3 class="slide-header gilroy">Делай селфи,<br>как Бен Стиллер!</h3>
+            <p class="slide-desc">
+              Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a class="btn slide-btn" href="product.html">Подробнее</a>
+            <dl class="slide-properties">
+              <div class="slide-properties-item">
+                <dt>Длина палки</dt>
+                <dd class="gilroy">8.5 м</dd>
+              </div>
+              <div class="slide-properties-item">
+                <dt>Вес палки</dt>
+                <dd class="gilroy">5 кг</dd>
+              </div>
+              <div class="slide-properties-item">
+                <dt>Материал</dt>
+                <dd class="gilroy">Карбон</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide-col slide-col-left">
+            <img class="slide-img slide-img-bracer" src="img/slider-2.png" alt="Мотивирующий фитнес-браслет" width="345" height="485">
+          </div>
+          <div class="slide-col slide-col-right">
+            <div class="slide-num gilroy">02</div>
+            <h3 class="slide-header gilroy">Худеем<br>правильно!</h3>
+            <p class="slide-desc">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не&nbsp;пропускать занятия и соблюдать диету.
+            </p>
+            <a class="btn slide-btn" href="product.html">Подробнее</a>
+            <dl class="slide-properties">
+              <div class="slide-properties-item">
+                <dt>Без подзарядки</dt>
+                <dd class="gilroy">48 часов</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide-col slide-col-left">
+            <img class="slide-img slide-img-copter" src="img/slider-3.png" alt="Квадрокоптер с лазером" width="526" height="334">
+          </div>
+          <div class="slide-col slide-col-right">
+            <div class="slide-num gilroy">03</div>
+            <h3 class="slide-header gilroy">Порхает как бабочка, жалит как пчела!</h3>
+            <p class="slide-desc">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным&nbsp;лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="btn slide-btn" href="product.html">Подробнее</a>
+            <dl class="slide-properties">
+              <div class="slide-properties-item">
+                <dt>Дальность полёта</dt>
+                <dd class="gilroy">800 м</dd>
+              </div>
+              <div class="slide-properties-item">
+                <dt>Дальность поражения</dt>
+                <dd class="gilroy">50 м</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <nav class="slider-nav">
+          <label class="slider-nav-1" for="slider-nav-1">
+            <span class="visually-hidden">Первый слайд</span>
+          </label>
+          <label class="slider-nav-2" for="slider-nav-2">
+            <span class="visually-hidden">Второй слайд</span>
+          </label>
+          <label class="slider-nav-3" for="slider-nav-3">
+            <span class="visually-hidden">Третий слайд</span>
+          </label>
+        </nav>
+      </section>
+      <section class="categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="list-reset">
-          <li class="slider-nav-1">Первый слайд</li>
-          <li class="slider-nav-2">Второй слайд</li>
-          <li class="slider-nav-3">Третий слайд</li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Виртуальная реальность">
+              Виртуальная реальность
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Моноподы для селфи">
+              Моноподы для селфи
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Экшн-камеры">
+              Экшн-камеры
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Фитнес-браслеты">
+              Фитнес-браслеты
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Умные часы">
+              Умные часы
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html">
+              <img src="img/cat.jpg" alt="Квадрокоптеры">
+              Квадрокоптеры
+            </a>
+          </li>
         </ul>
-      </nav>
-    </section>
-    <section class="categories">
-      <h2 class="visually-hidden">Категории товаров</h2>
-      <ul class="list-reset">
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Виртуальная реальность">
-          Виртуальная реальность
-        </li>
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Моноподы для селфи">
-          Моноподы для селфи
-        </li>
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Экшн-камеры">
-          Экшн-камеры
-        </li>
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Фитнес-браслеты">
-          Фитнес-браслеты
-        </li>
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Умные часы">
-          Умные часы
-        </li>
-        <li class="categories-item">
-          <img src="img/cat.jpg" alt="Квадрокоптеры">
-          Квадрокоптеры
-        </li>
-      </ul>
-    </section>
+      </section>
+    </div>
     <section class="terms">
       <h2 class="visually-hidden">Условия работы</h2>
       <div class="tabs-box">
@@ -110,32 +227,26 @@
         </ul>
         <ul class="tabs-content-list list-reset">
           <li class="tabs-content-item">
-            <section>
-              <h3 class="tabs-heading">Доставка</h3>
-              <p class="tabs-text">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </section>
+            <h3 class="tabs-heading">Доставка</h3>
+            <p class="tabs-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
           </li>
           <li class="tabs-content-item">
-            <section>
-              <h3 class="tabs-heading">Гарантия</h3>
-              <p class="tabs-text">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-                мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-            </section>
+            <h3 class="tabs-heading">Гарантия</h3>
+            <p class="tabs-text">
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+              мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
           </li>
           <li class="tabs-content-item">
-            <section>
-              <h3 class="tabs-heading">Кредит</h3>
-              <p class="tabs-text">
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
-            </section>
+            <h3 class="tabs-heading">Кредит</h3>
+            <p class="tabs-text">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
           </li>
         </ul>
       </div>
@@ -143,10 +254,22 @@
     <section class="brends">
       <h2 class="visually-hidden">Представленные бренды</h2>
       <ul class="brends-list list-reset">
-        <li><img src="brend.jpg" alt="DJI" width="260" height="100"></li>
-        <li><img src="brend.jpg" alt="SP Gadgets" width="260" height="100"></li>
-        <li><img src="brend.jpg" alt="GoPro" width="260" height="100"></li>
-        <li><img src="brend.jpg" alt="VIVE" width="260" height="100"></li>
+        <li>
+          <a href="catalog.html">
+            <img src="brend.jpg" alt="DJI" width="260" height="100"></li>
+          </a>
+        <li>
+          <a href="catalog.html">
+            <img src="brend.jpg" alt="SP Gadgets" width="260" height="100"></li>
+          </a>
+        <li>
+          <a href="catalog.html">
+            <img src="brend.jpg" alt="GoPro" width="260" height="100"></li>
+          </a>
+        <li>
+          <a href="catalog.html">
+            <img src="brend.jpg" alt="VIVE" width="260" height="100"></li>
+          </a>
       </ul>
     </section>
     <section class="about">
@@ -171,7 +294,9 @@
         Вы можете забрать товар сами, заехав в наш офис.
         Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
-      <img src="map.jpg" alt="Наш адрес - ул. Строителей, 15" width="560" height="222">
+      <a href="contacts.html">
+        <img src="map.jpg" alt="Наш адрес - ул. Строителей, 15" width="560" height="222">
+      </a>
       <a class="btn" href="feedback.html">Напишите нам</a>
     </section>
   </main>
