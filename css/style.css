@@ -701,12 +701,19 @@ img {
   letter-spacing: 0.47px;
 }
 
+.brends {
+  margin-bottom: 93px;
+}
 .brends-list {
   display: flex;
   justify-content: space-between;
 }
 .brends-item-link {
   display: block;
+}
+.brends-item-link img {
+  width: 260px;
+  height: 100px;
 }
 .brends-img {
   display: block;
@@ -721,4 +728,83 @@ img {
 .brends-item:hover .brends-img,
 .brends-item:focus .brends-img {
   display: none;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.index-columns section {
+  position: relative;
+  padding-top: 52px;
+  flex-shrink: 0;
+}
+.index-columns section::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 7px;
+  left: 0;
+  top: 0;
+  background-color: #000;
+}
+.index-columns .btn {
+  min-width: 260px;
+}
+.index-columns h2 {
+  margin: 0;
+  margin-bottom: 43px;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+.about {
+  width: 500px;
+  padding-right: 22px;
+}
+.about-desc {
+  margin-bottom: 65px;
+}
+.about-desc p {
+  margin: 0;
+  margin-bottom: 30px;
+  letter-spacing: normal;
+}
+.about-tcs {
+  font-size: 16px;
+  line-height: 40px;
+  margin-bottom: 55px;
+}
+.about-tcs li {
+  position: relative;
+  padding-left: 35px;
+}
+.about-tcs li::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 1px;
+  width: 8px;
+  height: 8px;
+  border:2px solid #e5e5e5;
+  border-radius: 50%;
+}
+.contacts {
+  width: 560px;
+}
+.contacts-desc {
+  margin-bottom: 39px;
+}
+.contacts-desc p {
+  margin: 0;
+}
+.contacts-map-link {
+  display: block;
+  margin-bottom: 69px;
+}
+.contacts-map-link img {
+  display: block;
+  width: 560px;
+  height: 222px;
 }
