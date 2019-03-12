@@ -617,6 +617,7 @@ img {
 .terms {
   position: relative;
   min-height: 388px;
+  margin-bottom: 94px;
 }
 .terms::before {
   content: "";
@@ -698,4 +699,26 @@ img {
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.47px;
+}
+
+.brends-list {
+  display: flex;
+  justify-content: space-between;
+}
+.brends-item-link {
+  display: block;
+}
+.brends-img {
+  display: block;
+}
+.brends-img-hover {
+  display: none;
+}
+.brends-item:hover .brends-img-hover,
+.brends-item:focus .brends-img-hover {
+  display: block;
+}
+.brends-item:hover .brends-img,
+.brends-item:focus .brends-img {
+  display: none;
 }
