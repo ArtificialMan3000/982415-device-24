@@ -159,47 +159,89 @@
         <div class="sort">
           <h3 class="filter-header gilroy">Сортировка:</h3>
           <ul class="sort-list list-reset">
-            <li>
+            <li class="sort-item sort-item-current">
               <a href="catalog.html?sort=price">По цене</a>
             </li>
-            <li>
+            <li class="sort-item">
               <a href="catalog.html?sort=type">По типу</a>
             </li>
-            <li>
+            <li class="sort-item">
               <a href="catalog.html?sort=popular">По популярности</a>
             </li>
           </ul>
-          <a href="catalog.html?order=asc">По возрастанию</a>
-          <a href="catalog.html?order=desc">По убыванию</a>
+          <ul class="sort-order-list list-reset">
+            <li class="sort-order-item sort-order-item-asc sort-order-item-current">
+              <a>
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
+            </li>
+            <li class="sort-order-item sort-order-item-desc">
+              <a href="catalog.html?order=desc">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="catalog-grid list-reset">
           <li class="catalog-grid-item">
-            <img class="catalog-img" src="product.jpg" alt="Любительская селфи-палка" width="360" height="380">
-            <a class="catalog-link" href="product.html">Любительская селфи-палка</a>
-            <span class="catalog-price">500 руб.</span>
+            <div class="catalog-img-wrap">
+              <img class="catalog-img" src="img/product1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+              <div class="catalog-img-overlay">
+                <a class="btn btn-catalog" href="cart.html">В корзину</a>
+                <a class="catalog-compare-link" href="compare.html">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="catalog-link-price-wrap">
+              <a class="catalog-link gilroy" href="product.html">Любительская селфи-палка</a>
+              <span class="catalog-price gilroy">500 руб.</span>
+            </div>
           </li>
           <li class="catalog-grid-item">
-            <img class="catalog-img" src="product.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-            <a class="catalog-link" href="product.html">Профессиональная селфи-палка</a>
-            <span class="catalog-price">1 500 руб.</span>
+            <div class="catalog-img-wrap">
+              <img class="catalog-img" src="img/product2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+              <div class="catalog-img-overlay">
+                <a class="btn btn-catalog" href="cart.html">В корзину</a>
+                <a class="catalog-compare-link" href="compare.html">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="catalog-link-price-wrap">
+              <a class="catalog-link gilroy" href="product.html">Профессиональная селфи&#8209;палка</a>
+              <span class="catalog-price gilroy">1 500 руб.</span>
+            </div>
           </li>
           <li class="catalog-grid-item">
-            <img class="catalog-img" src="product.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <a class="catalog-link" href="product.html">Непотопляемая селфи-палка</a>
-            <span class="catalog-price">2 500 руб.</span>
+            <div class="catalog-img-wrap">
+              <img class="catalog-img" src="img/product3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <div class="catalog-img-overlay">
+                <a class="btn btn-catalog" href="cart.html">В корзину</a>
+                <a class="catalog-compare-link" href="compare.html">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="catalog-link-price-wrap">
+              <a class="catalog-link gilroy" href="product.html">Непотопляемая селфи&#8209;палка</a>
+              <span class="catalog-price gilroy">2 500 руб.</span>
+            </div>
           </li>
           <li class="catalog-grid-item">
-            <img class="catalog-img" src="product.jpg" alt="Селфи-палка &laquo;Следуй за мной&raquo;" width="360" height="380">
-            <a class="catalog-link" href="product.html">Селфи-палка &laquo;Следуй за мной&raquo;</a>
-            <span class="catalog-price">4 900 руб.</span>
+            <div class="catalog-img-wrap">
+              <img class="catalog-img" src="img/product4.jpg" alt="Селфи-палка &laquo;Следуй за мной&raquo;" width="360" height="380">
+              <div class="catalog-img-overlay">
+                <a class="btn btn-catalog" href="cart.html">В корзину</a>
+                <a class="catalog-compare-link" href="compare.html">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="catalog-link-price-wrap">
+              <a class="catalog-link gilroy" href="product.html">Селфи-палка &laquo;Следуй за мной&raquo;</a>
+              <span class="catalog-price gilroy">4 900 руб.</span>
+            </div>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item pagination-prev"><a>Назад</a></li>
-          <li class="pagination-item"><a href="catalog.html">1</a></li>
-          <li class="pagination-item"><a href="catalog.html">2</a></li>
-          <li class="pagination-item"><a href="catalog.html">3</a></li>
-          <li class="pagination-item pagination-next"><a href="catalog.html">Вперёд</a></li>
+        <ul class="pagination list-reset">
+          <li class="pagination-item pagination-prev gilroy"><a>Назад</a></li>
+          <li class="pagination-item gilroy"><a href="catalog.html">1</a></li>
+          <li class="pagination-item gilroy"><a href="catalog.html">2</a></li>
+          <li class="pagination-item gilroy"><a href="catalog.html">3</a></li>
+          <li class="pagination-item pagination-next gilroy"><a href="catalog.html">Вперёд</a></li>
         </ul>
       </section>
       <div class="sort-stretcher"></div>
