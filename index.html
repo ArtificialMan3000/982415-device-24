@@ -372,14 +372,14 @@
       </div>
       <div class="footer-col-3">
         <ul class="footer-add-menu list-reset">
-          <li class="footer-add-menu-item">
-            <a class="footer-add-menu-login" href="login.html">Войти</a>
+          <li class="footer-add-menu-item footer-add-menu-login">
+            <a href="login.html">Войти</a>
           </li>
-          <li class="footer-add-menu-item">
-            <a class="footer-add-menu-compare" href="compare.html">Сравнить</a>
+          <li class="footer-add-menu-item footer-add-menu-compare">
+            <a href="compare.html">Сравнить</a>
           </li>
-          <li class="footer-add-menu-item">
-            <a class="footer-add-menu-cart" href="cart.html">Корзина</a>
+          <li class="footer-add-menu-item footer-add-menu-cart">
+            <a href="cart.html">Корзина</a>
           </li>
         </ul>
         <address class="footer-phone">
@@ -394,23 +394,24 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post">
-      <p class="feedback-form-input">
-        <label for="feedback_name">Ваше имя:</label>
+      <p class="feedback-form-item feedback-form-input">
+        <label class="gilroy" for="feedback_name">Ваше имя:</label>
         <input id="feedback_name" name="feedback-name" type="text" placeholder="Имя Фамилия">
       </p>
-      <p class="feedback-form-input">
-        <label for="feedback_email">Ваш e-mail:</label>
+      <p class="feedback-form-item feedback-form-input">
+        <label class="gilroy" for="feedback_email">Ваш e-mail:</label>
         <input id="feedback_email" name="feedback-email" type="email" placeholder="email@example.com">
       </p>
-      <p class="feedback-form-textarea">
-        <label for="feedback_text">Текст письма:</label>
-        <textarea id="feedback_text" name="feedback-text" rows="10" placeholder="В свободной форме"></textarea>
+      <p class="feedback-form-item feedback-form-textarea">
+        <label class="gilroy" for="feedback_text">Текст письма:</label>
+        <textarea id="feedback_text" name="feedback-text" rows="6" placeholder="В свободной форме"></textarea>
       </p>
+      <button class="btn feedback-btn">Отправить</button>
     </form>
-    <a class="modal-close"><span class="visually-hidden">Закрыть</span></a>
+    <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <div class="modal modal-map">
-    <img src="map.jpg" alt="Наш адрес - ул. Строителей, 15" width="960" height="559">
+    <img src="img/map-big.jpg" alt="Наш адрес - ул. Строителей, 15" width="960" height="559">
   </div>
 </body>
 </html>
