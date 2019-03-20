@@ -644,7 +644,7 @@ img {
   position: relative;
 
   padding-top: 79px;
-  padding-right: 60px;
+  padding-right: 55px;
 }
 .slide-col-right::before {
   content: "";
