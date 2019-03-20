@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Device - магазин хитрых штук</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -16,7 +16,8 @@
         <div class="main-nav-row main-nav-row-top">
           <div class="main-nav-search">
             <form method="get" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
-              <input type="search" name="site-search" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="main-nav-search">Поиск по сайту</label>
+              <input id="main-nav-search" type="search" name="site-search" placeholder="Поиск по сайту">
               <button type="submit">Найти</button>
             </form>
           </div>
@@ -35,32 +36,34 @@
         <div class="main-nav-row main-nav-row-bottom gilroy">
           <ul class="main-nav-menu list-reset">
             <li class="main-nav-menu-item main-nav-catalog">
-              <a href="catalog.html">Каталог товаров</a>
-              <div class="cat-menu-dropdown">
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Виртуальная реальность</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Фитнес-браслеты</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Квадрокоптеры</a>
-                  </li>
-                </ul>
+              <div class="main-nav-catalog-inner">
+                <a href="catalog.html">Каталог товаров</a>
+                <div class="cat-menu-dropdown">
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Виртуальная реальность</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Моноподы для селфи</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Фитнес-браслеты</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="main-nav-menu-item main-nav-delivery">
@@ -174,7 +177,7 @@
         <ul class="categories-list list-reset">
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-VR" href="catalog.html">
-              <img src="img/cat-VR.svg" alt="Виртуальная реальность">
+              <img src="img/cat-VR.svg" alt="Виртуальная реальность" width="97" height="55">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Виртуальная реальность
@@ -182,7 +185,7 @@
           </li>
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-monopod" href="catalog.html">
-              <img src="img/cat-monopod.svg" alt="Моноподы для селфи">
+              <img src="img/cat-monopod.svg" alt="Моноподы для селфи" width="86" height="117">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Моноподы для&nbsp;селфи
@@ -190,7 +193,7 @@
           </li>
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-action" href="catalog.html">
-              <img src="img/cat-action.svg" alt="Экшн-камеры">
+              <img src="img/cat-action.svg" alt="Экшн-камеры" width="71" height="87">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Экшн-камеры
@@ -198,7 +201,7 @@
           </li>
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-bracer" href="catalog.html">
-              <img src="img/cat-bracer.svg" alt="Фитнес-браслеты">
+              <img src="img/cat-bracer.svg" alt="Фитнес-браслеты" width="107" height="65">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Фитнес-браслеты
@@ -206,7 +209,7 @@
           </li>
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-watch" href="catalog.html">
-              <img src="img/cat-watch.svg" alt="Умные часы">
+              <img src="img/cat-watch.svg" alt="Умные часы" width="56" height="98">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Умные часы
@@ -214,7 +217,7 @@
           </li>
           <li class="categories-item">
             <a class="categories-img-link categories-img-link-copter" href="catalog.html">
-              <img src="img/cat-copter.svg" alt="Квадрокоптеры">
+              <img src="img/cat-copter.svg" alt="Квадрокоптеры" width="132" height="69">
             </a>
             <a class="categories-name-link gilroy" href="catalog.html">
               Квадрокоптеры
@@ -227,15 +230,18 @@
       <div class="container">
         <h2 class="visually-hidden">Условия работы</h2>
         <div class="tabs-box">
+          <input class="visually-hidden" id="tab_1" name="tabs" type="radio" checked>
+          <input class="visually-hidden" id="tab_2" name="tabs" type="radio">
+          <input class="visually-hidden" id="tab_3" name="tabs" type="radio">
           <ul class="tabs-btns-list list-reset">
-            <li class="tabs-btns-item tabs-btns-item-current">
-              <button class="btn" disabled>Доставка</button>
+            <li class="tabs-btns-item tabs-btns-item-1">
+              <label class="btn" for="tab_1">Доставка</label>
             </li>
-            <li class="tabs-btns-item">
-              <button class="btn">Гарантия</button>
+            <li class="tabs-btns-item tabs-btns-item-2">
+              <label class="btn" for="tab_2">Гарантия</label>
             </li>
-            <li class="tabs-btns-item">
-              <button class="btn">Кредит</button>
+            <li class="tabs-btns-item tabs-btns-item-3">
+              <label class="btn" for="tab_3">Кредит</label>
             </li>
           </ul>
           <ul class="tabs-content-list list-reset">
@@ -283,8 +289,8 @@
           </li>
           <li class="brends-item">
             <a class="brends-item-link" href="catalog.html">
-              <img class="brends-img" src="img/GoPro.jpg" alt="GoPro" width="260" height="100">
-              <img class="brends-img-hover" src="img/GoPro-hover.jpg" alt="GoPro" width="260" height="100">
+              <img class="brends-img" src="img/gopro.jpg" alt="gopro" width="260" height="100">
+              <img class="brends-img-hover" src="img/gopro-hover.jpg" alt="gopro" width="260" height="100">
             </a>
           </li>
           <li class="brends-item">
@@ -322,10 +328,10 @@
               Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
           </div>
-          <a class="contacts-map-link"href="contacts.html">
+          <a class="contacts-map-link" href="contacts.html">
             <img src="img/map.jpg" alt="Наш адрес - ул. Строителей, 15" width="560" height="222">
           </a>
-          <a class="btn" href="feedback.html">Напишите нам</a>
+          <a class="btn feedback-link" href="feedback.html">Напишите нам</a>
         </section>
       </div>
     </div>
@@ -355,17 +361,17 @@
         <ul class="footer-socials list-reset">
           <li class="footer-socials-item footer-socials-facebook">
             <a href="https://facebook.com">
-              <span class="visually-hidden">Мы в facebook</span>
+              <img class="footer-socials-img" src="img/facebook.svg" alt="Мы в Facebook" width="32" height="32">
             </a>
           </li>
           <li class="footer-socials-item footer-socials-instagramm">
             <a href="https://instagramm">
-              <span class="visually-hidden">Мы в instagramm</span>
+              <img class="footer-socials-img" src="img/instagramm.svg" alt="Мы в Instagramm" width="32" height="32">
             </a>
           </li>
           <li class="footer-socials-item footer-socials-twitter">
             <a href="https://twitter">
-              <span class="visually-hidden">Мы в twitter</span>
+              <img class="footer-socials-img" src="img/twitter.svg" alt="Мы в Twitter" width="32" height="32">
             </a>
           </li>
         </ul>
@@ -404,14 +410,18 @@
       </p>
       <p class="feedback-form-item feedback-form-textarea">
         <label class="gilroy" for="feedback_text">Текст письма:</label>
-        <textarea id="feedback_text" name="feedback-text" rows="6" placeholder="В свободной форме"></textarea>
+        <textarea id="feedback_text" name="feedback-text" rows="6" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="btn feedback-btn">Отправить</button>
     </form>
     <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <div class="modal modal-map">
+    <div class="modal-map-interactive" id="map" style="width: 960px; height: 559px"></div>
     <img src="img/map-big.jpg" alt="Наш адрес - ул. Строителей, 15" width="960" height="559">
+    <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cdd788e9-fb0b-4f1b-8096-92674e52bed3&lang=ru_RU"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

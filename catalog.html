@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Device - магазин хитрых штук</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="inner-page">
   <div class="container">
@@ -16,7 +16,8 @@
         <div class="main-nav-row main-nav-row-top">
           <div class="main-nav-search">
             <form method="get" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
-              <input type="search" name="site-search" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="main-nav-search">Поиск по сайту</label>
+              <input id="main-nav-search" type="search" name="site-search" placeholder="Поиск по сайту">
               <button type="submit">Найти</button>
             </form>
           </div>
@@ -38,32 +39,34 @@
         <div class="main-nav-row main-nav-row-bottom gilroy">
           <ul class="main-nav-menu list-reset">
             <li class="main-nav-menu-item main-nav-catalog">
-              <a href="catalog.html">Каталог товаров</a>
-              <div class="cat-menu-dropdown">
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Виртуальная реальность</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Фитнес-браслеты</a>
-                  </li>
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="cat-menu-dropdown-list list-reset">
-                  <li class="cat-menu-dropdown-item">
-                    <a href="catalog.html">Квадрокоптеры</a>
-                  </li>
-                </ul>
+              <div class="main-nav-catalog-inner">
+                <a href="catalog.html">Каталог товаров</a>
+                <div class="cat-menu-dropdown">
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Виртуальная реальность</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Моноподы для селфи</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Фитнес-браслеты</a>
+                    </li>
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="cat-menu-dropdown-list list-reset">
+                    <li class="cat-menu-dropdown-item">
+                      <a href="catalog.html">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="main-nav-menu-item main-nav-delivery">
@@ -148,7 +151,7 @@
             </label>
             <label class="filter-bluetooth-item">
               <input class="filter-bluetooth-radio" type="radio" name="filter-bluetooth" value="false">
-              <span class="filter-bluetooth-text"></span>Нет</span>
+              <span class="filter-bluetooth-text">Нет</span>
             </label>
           </fieldset>
           <button class="btn btn-filter">Показать</button>
@@ -222,7 +225,7 @@
               <span class="catalog-price gilroy">2 500 руб.</span>
             </div>
           </li>
-          <li class="catalog-grid-item">
+          <li class="catalog-grid-item catalog-grid-item-new">
             <div class="catalog-img-wrap">
               <img class="catalog-img" src="img/product4.jpg" alt="Селфи-палка &laquo;Следуй за мной&raquo;" width="360" height="380">
               <div class="catalog-img-overlay">
@@ -272,17 +275,17 @@
         <ul class="footer-socials list-reset">
           <li class="footer-socials-item footer-socials-facebook">
             <a href="https://facebook.com">
-              <span class="visually-hidden">Мы в facebook</span>
+              <img class="footer-socials-img" src="img/facebook.svg" alt="Мы в Facebook" width="32" height="32">
             </a>
           </li>
           <li class="footer-socials-item footer-socials-instagramm">
             <a href="https://instagramm">
-              <span class="visually-hidden">Мы в instagramm</span>
+              <img class="footer-socials-img" src="img/instagramm.svg" alt="Мы в Instagramm" width="32" height="32">
             </a>
           </li>
           <li class="footer-socials-item footer-socials-twitter">
             <a href="https://twitter">
-              <span class="visually-hidden">Мы в twitter</span>
+              <img class="footer-socials-img" src="img/twitter.svg" alt="Мы в Twitter" width="32" height="32">
             </a>
           </li>
         </ul>
