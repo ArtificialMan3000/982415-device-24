@@ -33,7 +33,7 @@ link.addEventListener("click", function (evt) {
       email.focus();
     }
     else {
-      if (emailName) {
+      if (storageEmail) {
         email.value = storageEmail;
         name.focus();
       }
@@ -56,6 +56,7 @@ form.addEventListener("submit", function (evt) {
     modal.classList.remove("modal-error");
     modal.offsetWidth = modal.offsetWidth;
     modal.classList.add("modal-error");
+    text.classList.add("input-invalid");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("feedback-name", name.value);

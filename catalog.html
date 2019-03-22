@@ -99,7 +99,9 @@
         <div class="filter-header-stretcher"></div>
       </div>
       <section class="filter">
-        <h2 class="filter-header gilroy">Фильтр:</h2>
+        <div class="ie11-fixer">
+          <h2 class="filter-header gilroy">Фильтр:</h2>
+        </div>
         <div class="filter-bg"></div>
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
           <fieldset class="filter-price">
@@ -109,12 +111,12 @@
               <div class="range-inner">
                 <div class="range-handler range-handler-1">
                   <label class="range-value range-value-min gilroy">
-                    от&nbsp;<input type="number" name="filter-price-min" value="0">
+                    от&nbsp;<input type="text" name="filter-price-min" value="0">
                   </label>
                 </div>
                 <div class="range-handler range-handler-2">
                   <label class="range-value range-value-max gilroy">
-                    до&nbsp;<input type="number" name="filter-price-max" value="5000">
+                    до&nbsp;<input type="text" name="filter-price-max" value="5000">
                   </label>
                 </div>
               </div>
@@ -122,37 +124,37 @@
           </fieldset>
           <fieldset class="filter-color">
             <legend class="gilroy">Цвет</legend>
-            <label class="filter-color-item">
-              <input class="filter-color-checkbox" type="checkbox" name="filter-color-black" checked>
-              <span class="filter-color-text">Чёрный</span>
-            </label>
-            <label class="filter-color-item">
-              <input class="filter-color-checkbox" type="checkbox" name="filter-color-white">
-              <span class="filter-color-text">Белый</span>
-            </label>
-            <label class="filter-color-item">
-              <input class="filter-color-checkbox" type="checkbox" name="filter-color-blue" checked>
-              <span class="filter-color-text">Синий</span>
-            </label>
-            <label class="filter-color-item">
-              <input class="filter-color-checkbox" type="checkbox" name="filter-color-red" checked disabled>
-              <span class="filter-color-text">Красный</span>
-            </label>
-            <label class="filter-color-item">
-              <input class="filter-color-checkbox" type="checkbox" name="filter-color-pink">
-              <span class="filter-color-text">Розовый</span>
-            </label>
+            <p class="filter-color-item">
+              <input class="visually-hidden filter-color-checkbox" id="filter-color-black" type="checkbox" name="filter-color-black" checked>
+              <label class="filter-color-label" for="filter-color-black">Чёрный</label>
+            </p>
+            <p class="filter-color-item">
+              <input class="visually-hidden filter-color-checkbox" id="filter-color-white" type="checkbox" name="filter-color-white">
+              <label class="filter-color-label" for="filter-color-white">Белый</label>
+            </p>
+            <p class="filter-color-item">
+              <input class="visually-hidden filter-color-checkbox" id="filter-color-blue" type="checkbox" name="filter-color-blue" checked>
+              <label class="filter-color-label" for="filter-color-blue">Синий</label>
+            </p>
+            <p class="filter-color-item">
+              <input class="visually-hidden filter-color-checkbox" id="filter-color-red" type="checkbox" name="filter-color-red" checked disabled>
+              <label class="filter-color-label" for="filter-color-red">Красный</label>
+            </p>
+            <p class="filter-color-item">
+              <input class="visually-hidden filter-color-checkbox" id="filter-color-pink" type="checkbox" name="filter-color-pink">
+              <label class="filter-color-label" for="filter-color-pink">Розовый</label>
+            </p>
           </fieldset>
           <fieldset class="filter-bluetooth">
             <legend class="gilroy">Bluetooth</legend>
-            <label class="filter-bluetooth-item">
-              <input class="filter-bluetooth-radio" type="radio" name="filter-bluetooth" value="true" checked>
-              <span class="filter-bluetooth-text">Есть</span>
-            </label>
-            <label class="filter-bluetooth-item">
-              <input class="filter-bluetooth-radio" type="radio" name="filter-bluetooth" value="false">
-              <span class="filter-bluetooth-text">Нет</span>
-            </label>
+            <p class="filter-bluetooth-item">
+              <input class="visually-hidden filter-bluetooth-radio" id="filter-bluetooth-true" type="radio" name="filter-bluetooth" value="true" checked>
+              <label class="filter-bluetooth-label" for="filter-bluetooth-true">Есть</label>
+            </p>
+            <p class="filter-bluetooth-item">
+              <input class="visually-hidden filter-bluetooth-radio" id="filter-bluetooth-false" type="radio" name="filter-bluetooth" value="false">
+              <label class="filter-bluetooth-label" for="filter-bluetooth-false">Нет</label>
+            </p>
           </fieldset>
           <button class="btn btn-filter">Показать</button>
         </form>
