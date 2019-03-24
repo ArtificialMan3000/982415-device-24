@@ -413,6 +413,7 @@ img {
 
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 }
 
 .feedback-form input::-webkit-input-placeholder,
@@ -435,7 +436,7 @@ img {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.feedback-form input:hover
+.feedback-form input:hover,
 .feedback-form textarea:hover {
   background-color: #eaeaea;
 }

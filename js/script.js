@@ -4,7 +4,7 @@ var modal = document.querySelector(".modal-feedback");
 var close = modal.querySelector(".modal-close");
 
 var form = modal.querySelector("form");
-var name = modal.querySelector("[name=feedback-name]");
+var username = modal.querySelector("[name=feedback-name]");
 var email = modal.querySelector("[name=feedback-email]");
 var text = modal.querySelector("[name=feedback-text]");
 
@@ -24,21 +24,21 @@ link.addEventListener("click", function (evt) {
   modal.classList.add("modal-show");
 
   if (storageName && storageEmail) {
-    name.value = storageName;
+    username.value = storageName;
     email.value = storageEmail;
     text.focus();
   } else {
     if (storageName) {
-      name.value = storageName;
+      username.value = storageName;
       email.focus();
     }
     else {
       if (storageEmail) {
         email.value = storageEmail;
-        name.focus();
+        username.focus();
       }
       else {
-        name.focus();
+        username.focus();
       }
     }
   }
@@ -59,7 +59,7 @@ form.addEventListener("submit", function (evt) {
     text.classList.add("input-invalid");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("feedback-name", name.value);
+      localStorage.setItem("feedback-name", username.value);
       localStorage.setItem("feedback-email", email.value);
       localStorage.setItem("feedback-text", text.value);
     }
